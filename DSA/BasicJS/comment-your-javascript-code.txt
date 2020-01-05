@@ -1,0 +1,5 @@
+// Its just example of comment in javascript
+
+/*
+Just started learning at freeCodeCamp, will work?   
+*/
