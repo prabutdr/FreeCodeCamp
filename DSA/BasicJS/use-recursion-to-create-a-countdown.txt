@@ -1,0 +1,8 @@
+//Only change code below this line
+function countdown(n){
+  if (n <= 0) return [];
+  var a = countdown(n - 1)
+  a.unshift(n);
+  return a;
+}
+console.log(countdown(5)); // [5, 4, 3, 2, 1]

@@ -1,0 +1,10 @@
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum >= endNum)
+    return [endNum];
+
+  var a = rangeOfNumbers(startNum, endNum - 1);
+  a.push(endNum);
+  return a;
+};
+
+rangeOfNumbers(1, 5);
