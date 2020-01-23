@@ -1,6 +1,7 @@
 function solution(lines) {
   for (let i = 0; i < lines.length; i++) {
-    if (lines[i] === '42') break;
+    if (lines[i] === '42') process.exit();
+
     console.log(lines[i]);
   }
 }
