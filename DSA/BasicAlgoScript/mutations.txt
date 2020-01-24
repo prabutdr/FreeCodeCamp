@@ -1,0 +1,21 @@
+function mutation(arr) {
+  const set1 = arr[0].toLowerCase().split('').sort();
+  const set2 = arr[1].toLowerCase().split('').sort();
+  // console.log(set1);
+  // console.log(set2);
+  let i = 0;
+  for (let j = 0; i < set2.length && j < set1.length; ) {
+    if (set1[j] == set2[i]) {
+      i++;
+      // j++;
+    } else if (set1[j] < set2[i]) {
+      j++;
+    } else {
+      return false;
+    }
+  }
+  // console.log(i + ' ' + set2.length);
+  return (i === set2.length);
+}
+
+mutation(["Mary", "Aarmy"]);
